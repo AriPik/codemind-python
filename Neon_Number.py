@@ -1,11 +1,11 @@
-n=int(input())
-sq=n**2
-su=0
-while(sq!=0):
-    r=sq%10
-    su+=r
-    sq=sq//10
-if su==n:
-    print("Neon Number")
+x=int(input())
+s=x*x
+d=0
+while(s>0):
+    r=s%10
+    d+=r
+    s=s//10
+if(d==x):
+    print('Neon Number')
 else:
-    print("Not Neon Number")
+    print('Not Neon Number')
