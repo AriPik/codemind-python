@@ -1,15 +1,20 @@
-x=int(input())
-y=int(input())
-z=x+y
-s=0
-while(1):
-    z=z+1
+def prime(n):
     c=0
-    for i in range(1,z+1):
-        if(z%i==0):
-            c+=1
+    for i in range(1,n+1):
+        if(n%i==0):
+            c=c+1
     if(c==2):
-        print(s+1)
+        return 1
+    else:
+        return 0
+n=int(input())
+a=int(input())
+k=10000
+g=1
+for i in range(1,k):
+    if(prime(a+n+g)):
+        print(g)
         break
     else:
-        s+=1
+        g=g+1
+    
