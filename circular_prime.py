@@ -1,22 +1,23 @@
 def prime(n):
-    prime=True
+    p=True
     for i in range(2,n):
         if n%i==0:
-            prime=False
+            p=False
             break
-    if prime:
+    if p:
         return 1
     else:
         return 0
-        
-n=int(input())
-rev=0
-if prime(n):
+def reverse(n):
+    rev=0
     while(n!=0):
         rem=n%10
         rev=rev*10+rem
         n=n//10
-    if(prime(rev)):
+    return rev
+n=int(input())
+if prime(n):
+    if prime(reverse(n)):
         print("circular prime")
     else:
         print("prime but not a circular prime")
