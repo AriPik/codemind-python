@@ -1,5 +1,14 @@
-def add_digits(num):
-        return (num - 1) % 9 + 1 if num > 0 else 0
-
-n=int(input())
-print(add_digits(n))
+x=int(input())
+while(1):
+    c=0
+    s=0
+    while(x>0):
+       r=x%10
+       s+=r
+       c+=1
+       x=x//10
+    if(c==1):
+        print(s)
+        break
+    else:
+        x=s
