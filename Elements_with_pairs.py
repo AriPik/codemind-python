@@ -7,4 +7,3 @@ elif(n%2==1):
         arr.append("0")
         for i in range(len(arr)):
             print(arr[i],end=" ")
-        
