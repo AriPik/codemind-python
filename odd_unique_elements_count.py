@@ -1,13 +1,13 @@
+def unique(list1):
+    unique_list = []
+    s=0
+    for x in list1:
+        if x not in unique_list:
+            unique_list.append(x)
+    for z in unique_list:
+        if z%2!=0:
+            s+=1
+    return s
 n=int(input())
-arr=list(map(int,input().split()))
-b=[]
-for i in arr:
-    if i not in b:
-        b.append(i)
-    else:
-        continue
-c=0    
-for i in range(len(b)):
-    if(b[i]%2==1):
-        c=c+1
-print(c)    
+l=list(map(int,input().split()))
+print(unique(l))
