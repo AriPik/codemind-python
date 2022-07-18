@@ -1,6 +1,6 @@
-st=input()
-c=0
-for i in st:
+s=input()
+k=0
+for i in s:
     if i.isupper():
-        c+=1
-print(c)
+        k+=1
+print(k)
