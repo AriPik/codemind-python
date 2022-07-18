@@ -11,4 +11,4 @@ for i in range(len(arr)):
 for i in range(0,n+1):
     if(arr[i-1]%2==0 and arr[i+1]%2==1)or(arr[i-1]%2==1 and arr[i+1]%2==0):
             c=c+1
-print(c)            
+print(c)
