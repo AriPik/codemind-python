@@ -1,6 +1,6 @@
-n=input()
-c=0
-for i in n:
+s=input()
+k=0
+for i in s:
     if i.islower():
-        c+=1
-print(c)
+        k+=1
+print(k)
