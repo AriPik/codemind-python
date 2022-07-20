@@ -1,5 +1,5 @@
 s=input()
-l=s.split()
-l1=len(l)
-k=l[l1-1]
-print(k[0])
+a=s.split()
+l=len(a)
+w=a[l-1]
+print(w[0])
