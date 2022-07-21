@@ -13,5 +13,4 @@ for i in a:
     for j in b:
         if(i.lower()==j.lower()):
             c=c+1
-print(c)            
-            
+print(c)
