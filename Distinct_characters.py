@@ -1,5 +1,8 @@
 s=input().lower().replace(" ","")
-k=set(s)
-l=sorted(k)
-for i in l:
+d=[]
+for i in s:
+    if s.count(i)==1:
+        d.append(i)
+d.sort()
+for i in d:
     print(i,end="")
